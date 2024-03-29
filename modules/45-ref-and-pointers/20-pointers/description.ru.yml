@@ -62,8 +62,8 @@ theory: |
   int i_value { 5 };
   double d_value { 7.0 };
  
-  int* i_ptr { &iValue };    // ok
-  double* d_ptr { &dValue }; // ok
+  int* i_ptr { &i_value };    // ok
+  double* d_ptr { &d_value }; // ok
   i_ptr = &d_value; // ошибка
   ```
 
